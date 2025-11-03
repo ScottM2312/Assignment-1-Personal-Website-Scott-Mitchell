@@ -2,6 +2,9 @@ body{
     font-family: Arial, sans-serif;
     padding-top: 60px;
     background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 nav {
     position: fixed;
@@ -22,6 +25,7 @@ ul {
     padding: 0px;
     overflow: hidden;
     background-color: lightseagreen;
+    order: 1;
 }
 #navbar li {
     float: left;
@@ -40,8 +44,20 @@ ul {
 }
 h1, h2, h3, p {
     text-align: center;
-    color: black;
+    order: 0;
+}
+figure {
+    display: flex;
+    justify-content: center;
 }
 figcaption {
     font-style: italic;
+}
+table {
+    margin: 0px auto;
+}
+table, th, td {
+    border-width: 1px;
+    border-style: dotted;
+    text-align: center;
 }
