@@ -8,24 +8,25 @@ body{
 }
 nav {
     position: fixed;
+    display: flex;
     top: 0px;
     left: 0px;
     width: 100%;
     background-color: lightseagreen;
 }
-ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 #navbar {
     list-style: none;
-    display: inline-block;
+
     margin: 0px;
     padding: 0px;
     overflow: hidden;
     background-color: lightseagreen;
     order: 1;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 #navbar li {
     float: left;
@@ -39,9 +40,6 @@ ul {
 #navbar li a:hover {
     background-color: darkcyan;
 }
-#navbar li a.active {
-    background-color: teal;
-}
 h1, h2, h3, p {
     text-align: center;
     order: 0;
@@ -53,11 +51,24 @@ figure {
 figcaption {
     font-style: italic;
 }
-table {
+table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dotted black;
     margin: 0px auto;
 }
-table, th, td {
-    border-width: 1px;
-    border-style: dotted;
+th, td {
     text-align: center;
+}
+th:nth-of-type(odd), td:nth-of-type(odd){
+    background-color: antiquewhite;
+}
+th:nth-of-type(even), td:nth-of-type(even){
+    background-color: chartreuse;
+}
+td:nth-of-type(2), th:nth-of-type(2) {
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
