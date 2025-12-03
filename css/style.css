@@ -1,7 +1,14 @@
 body{
-    font-family:'Times New Roman', Times, serif;
+    margin: 0;
     padding-top: 60px;
-    background-color: lightblue;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #fff;
+    background-color: #add8e6 !important;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0, 0, 0, 0.87);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
