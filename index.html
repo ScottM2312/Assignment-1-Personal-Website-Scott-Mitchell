@@ -13,17 +13,48 @@
         <li><a href="introduction.html">Introduction</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="interests.html">Interests</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="cyberpunk.html">Cyberpunk 2077</a></li>
+        <li><a href="game.html">Game Tier List Page</a></li>
       </ul>
     </nav>
     <h1>Welcome to My Personal Website</h1>
     <p>This is a website for a web development assignment it displays information that one can use to find out more about myself and what hobbies I have.</p>
     <p>This Website has 3 web pages that provide information about my hobbies and interests.</p>
     <p>This is a Web Development Assignment for S.E.T.U. Waterford, Computer Science Year 1.</p>
+    <div>
     <figure>
       <img src="images/setu-waterford.png" alt="Image of SETU Waterford">
       <figcaption>Fig.1 -S.E.T.U. Waterford, Waterford, Ireland <a href="https://www.setu.ie" target="_blank">Page Link</a></figcaption>
      </figure>
     </div>
+    <H2>Contact Me</H2>
+    <div class="wrapper">
+            <form>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" pattern="[A-Za-z]{10}">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="date" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="rating">Rating of Site(1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <input type="text" name="comment" id="comment" pattern="[A-Za-z]{150}">
+                </div>
+                <div class="form-row">
+                  <input style="clear:left" type="submit">
+                  <input type="reset" value = "Start Over">
+                </div>
+            </form>
+            </div>
   </body>
 </html>

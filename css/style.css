@@ -78,6 +78,36 @@ td:nth-of-type(2), th:nth-of-type(2) {
     padding-left: 20px;
     padding-right: 20px;
 }
-form {
 
+#wrapper {
+  border: solid black 1px;
+  margin-top: 2em;
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+
+.form-row > label {
+  padding: .5em 1em .5em 0;
+}
+
+.form-row > input {
+  flex: 1;
+}
+
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+
+.form-row > button {
+  background: gray;
+  color: white;
+  border: 0;
 }
